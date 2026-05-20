@@ -44,5 +44,19 @@
     "arrets": 11,
     "listeArrets": ["Yoff Village", "Aeroport LSS",
       "Parcelles U17", "Grand Yoff", "HLM", "Sandaga"]
+  },
+  {
+    "id": 7, "numero": "14",
+    "depart": "Yoff", "arrivee": "Mariste",
+    "arrets": 11,
+    "listeArrets": ["Yoff Village", "Aeroport LSS",
+      "Parcelles U17", "HLM", "Pate d'Oie", "Mariste"]
+  },
+  {
+    "id": 8, "numero": "16",
+    "depart": "Yoff", "arrivee": "Pikine",
+    "arrets": 11,
+    "listeArrets": ["Yoff Village", "Aeroport LSS",
+      "HLM", "Patte d'Oie", "Croisement Camberene", "Pikine"]
   }
 ]

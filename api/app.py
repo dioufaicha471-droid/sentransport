@@ -19,6 +19,8 @@ def accueil():
 
 @app.route("/lignes")
 def get_lignes():
+    with open("lignes_ddd.json", "r") as f: 
+        lignes = json.load(f)
     return jsonify(lignes)
 
 @app.route("/arrets")
