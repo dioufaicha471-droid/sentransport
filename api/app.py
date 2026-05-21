@@ -10,6 +10,13 @@ CORS(app)
 with open("lignes_ddd.json", "r") as f:
     lignes = json.load(f)
 
+with open("arrets.json", "r") as f:
+    arrets = json.load(f)
+
+@app.route("/arrets")
+def get_arrets():
+    return jsonify(arrets)
+
 @app.route("/")
 def accueil():
     return jsonify({
@@ -23,15 +30,6 @@ def get_lignes():
         lignes = json.load(f)
     return jsonify(lignes)
 
-@app.route("/arrets")
-def get_arrets():
-    arrets = set()
-    for ligne in lignes:
-        for arret in ligne["listeArrets"]:
-            if arret not in arrets:
-                arrets.add(arret)
-
-    return jsonify(list(arrets))
 
 @app.route("/stats")
 def get_stats():
